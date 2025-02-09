@@ -1,0 +1,211 @@
+/* Media Queries for Mobile Responsiveness */
+
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 10000;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        padding: 10px 0px;
+        justify-content: space-evenly;
+        margin: 0;
+        width: 90%;
+        list-style: none;
+        background: #1a1a1a;
+    }
+
+    .mobile-nav .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        font-size: 13px;
+        color: #ffffff;
+        padding: 0px;
+    }
+
+    .mobile-nav .nav-link i {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .mobile-nav .nav-link.active {
+        color: #6c63ff;
+    }
+
+    /* left nav is actually for deekstop */
+    .left-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block !important;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .left-nav {
+        display: none;
+    }
+
+    .page-preview {
+        margin-bottom: 60px;
+        /* Adjust based on nav height */
+    }
+
+    /* Right Page Preview */
+    .page-preview {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    section {
+        margin-bottom: 3rem;
+        padding: revert-layer;
+        width: 100%;
+    }
+
+    /* Sections */
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .skill-item {
+        padding: 1rem;
+    }
+
+    .skill-item i {
+        font-size: 1.5rem;
+    }
+
+    .skill-item h3 {
+        font-size: 1rem;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .project-item {
+        padding: 1rem;
+    }
+
+    .project-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer {
+        left: 0;
+    }
+
+    /* Project Tabs */
+    .project-tabs {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .project-tabs .tab-button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Full Image Overlay */
+    .full-image {
+        width: 90%;
+    }
+
+    /* Project Modal */
+    .modal-content {
+        padding: 1rem;
+    }
+
+    .modal-body h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal-body p {
+        font-size: 0.9rem;
+    }
+
+    .modal-body ul {
+        margin-left: 1rem;
+    }
+
+    .modal-body ul li {
+        font-size: 0.8rem;
+    }
+
+    .custom-flex {
+        gap: 0.5rem;
+        /* Smaller gap on smaller screens */
+    }
+
+    .skill-pill {
+        padding: 0.4rem 0.8rem;
+        /* Smaller padding on smaller screens */
+        font-size: 0.8rem;
+        /* Smaller font size on smaller screens */
+    }
+
+    .hero-section {
+        flex-direction: column;
+        /* Stack content and image on smaller screens */
+        padding: 2rem 1rem;
+    }
+
+    .hero-content,
+    .hero-image {
+        max-width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        /* Smaller font size for mobile */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        /* Smaller font size for mobile */
+    }
+
+    .cert-card {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .cert-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cert-heading {
+        font-size: 2rem;
+    }
+
+    .cert-link {
+        font-size: 1.25rem;
+    }
+}
