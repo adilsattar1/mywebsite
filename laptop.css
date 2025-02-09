@@ -4,6 +4,11 @@
         width: 900px;
     }
 
+
+    .mobile-nav-content{
+        display: none;
+    }
+
     .modal-body p {
         font-size: 13px;
         margin-bottom: 1rem;
