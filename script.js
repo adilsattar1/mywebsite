@@ -135,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const galleryItems = document.querySelectorAll('.gallery-item img');
     const fullImageOverlay = document.createElement('div');
@@ -168,4 +167,3 @@ document.addEventListener('DOMContentLoaded', function () {
         fullImageOverlay.classList.remove('active');
     });
 });
-

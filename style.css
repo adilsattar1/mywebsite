@@ -11,9 +11,11 @@
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     --transition: all 0.3s ease;
 }
-.mobile-nav-content{
+
+.mobile-nav-content {
     display: none;
 }
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-dark);
@@ -137,6 +139,12 @@ body {
 .left-nav .dark-mode-toggle input:checked+.toggle-btn::after {
     left: calc(100% - 18px);
 }
+
+.navbar-nav .nav-link:hover {
+    box-shadow: 0 10px 15px -3px rgba(var(--primary-color-rgb), 0.1),
+        0 4px 6px -4px rgba(var(--primary-color-rgb), 0.1);
+}
+
 
 /* Right Page Preview */
 .page-preview {
