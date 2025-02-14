@@ -93,6 +93,7 @@
     .left-nav .profile-image {
         width: 100px;
         height: 100px;
+        object-fit: cover;
     }
 
     .left-nav .navbar-nav .nav-link {
