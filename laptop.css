@@ -21,7 +21,7 @@
     .modal-body ul li {
         font-size: 14px;
         margin-bottom: 0.25rem;
-        line-height: normal;
+        line-height: 1.3rem;
     }
     .hero-image {
         max-width: 30%;
