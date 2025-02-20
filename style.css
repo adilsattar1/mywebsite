@@ -33,7 +33,7 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: var(--shadow);
     overflow-y: auto;
 }
@@ -60,9 +60,9 @@ body {
 }
 
 .left-nav .bio {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--text-light);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
