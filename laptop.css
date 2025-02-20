@@ -223,4 +223,18 @@
         /* Change to your preferred hover color */
     }
 
+
+    .skill-item i {
+        font-size: 50px;
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-05px);
+        }
+    }
 }

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     // Dark Mode Toggle
     const darkModeToggle = document.getElementById('darkmode');
     const body = document.body;
@@ -11,11 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle dark mode
     darkModeToggle.addEventListener('change', () => {
+
+        console.log(darkModeToggle.checked);
         if (darkModeToggle.checked) {
             body.classList.add('dark-mode');
+            body.classList.remove('light-mode');
             localStorage.setItem('dark-mode', 'enabled');
         } else {
             body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
             localStorage.setItem('dark-mode', 'disabled');
         }
     });
@@ -166,4 +171,40 @@ document.addEventListener('DOMContentLoaded', function () {
     fullImageOverlay.addEventListener('click', function () {
         fullImageOverlay.classList.remove('active');
     });
+});
+
+
+const cursor = document.getElementById('cursor');
+const cursorTrail = document.getElementById('cursorTrail');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.pageX}px`;
+    cursor.style.top = `${e.pageY}px`;
+
+    // Add a delay for the trail effect
+    setTimeout(() => {
+        cursorTrail.style.left = `${e.pageX}px`;
+        cursorTrail.style.top = `${e.pageY}px`;
+        cursorTrail.style.opacity = 1;
+    }, 50);
+
+    // Fade out the trail
+    setTimeout(() => {
+        cursorTrail.style.opacity = 0;
+    }, 200);
+});
+
+document.addEventListener('click', (e) => {
+    const particles = document.getElementById('particles');
+    for (let i = 0; i < 10; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.left = `${e.pageX}px`;
+        particle.style.top = `${e.pageY}px`;
+        particles.appendChild(particle);
+
+        setTimeout(() => {
+            particle.remove();
+        }, 500);
+    }
 });
