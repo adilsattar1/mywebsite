@@ -2,27 +2,33 @@
     .modal-content {
         width: 900px;
     }
+
     .mobile-nav-content {
         display: none;
     }
+
     .modal-body p {
         font-size: 13px;
         margin-bottom: 1rem;
         line-height: 1rem;
     }
+
     .hero-content h1 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
+
     .skill-pill {
         padding: 0.2rem 0.6rem;
         font-size: 0.775rem;
     }
+
     .modal-body ul li {
         font-size: 14px;
         margin-bottom: 0.25rem;
         line-height: 1.3rem;
     }
+
     .hero-image {
         max-width: 30%;
     }
@@ -97,10 +103,124 @@
     }
 
     .left-nav .navbar-nav .nav-link {
-        padding: 0.4rem 0;
+        display: flex;
+        padding: 0.3rem 0;
+        align-items: anchor-center;
+        gap: 10px;
+        font-size: 16px;
+        text-align: -webkit-left;
     }
 
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
+
+    /* General Sidebar Styling */
+    .sidebar {
+        background-color: #1e1e2e;
+        width: 250px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        color: #ccc;
+    }
+
+    /* Profile Section */
+    .profile-section {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid #6c63ff;
+        margin-bottom: 0.5rem;
+    }
+
+    .profile-name {
+        color: #6c63ff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+    }
+
+    .profile-description {
+        font-size: 0.9rem;
+        color: #aaa;
+    }
+
+    /* Divider */
+    .divider {
+        border: none;
+        border-top: 1px solid #444;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* Navbar Links */
+    .navbar {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 0.8rem 0;
+    }
+
+    .navbar a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ccc;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.8rem 1rem;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar a i {
+        font-size: 1.2rem;
+        margin-right: 0.8rem;
+        color: #6c63ff;
+    }
+
+    .navbar a:hover {
+        background-color: #6c63ff;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(108, 99, 255, 0.3);
+    }
+
+    .navbar a:hover i {
+        color: #fff;
+    }
+
+    .navbar a.active {
+        background-color: #6c63ff;
+        color: #fff;
+    }
+
+    /* Dark Mode Toggle */
+    .dark-mode-toggle {
+        margin-top: auto;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+    .nav-link i {
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-link:hover i {
+        transform: scale(1.2);
+        color: #ff6347;
+        /* Change to your preferred hover color */
+    }
+
 }
