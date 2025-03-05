@@ -60,7 +60,7 @@ body.dark-mode {
 
 /* Left Navigation */
 .left-nav {
-    width: 250px;
+    width: 300px;
     background-color: var(--background-light);
     position: fixed;
     top: 0;
@@ -192,7 +192,7 @@ svg {
 
 /* Right Page Preview */
 .page-preview {
-    margin-left: 260px;
+    margin-left: 339px;
     flex: 1;
     padding: 0rem 2rem;
 }
